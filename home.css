@@ -1,0 +1,553 @@
+.image-slot {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+  min-height: 510px;
+  overflow: hidden;
+  background: #e8eef7;
+}
+
+.hero__visual {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__map {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0.02)), url("assets/cta-map-pins.jpg");
+  filter: saturate(0.95) contrast(1.05);
+  transform: scale(1.03);
+}
+
+.hero__map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,0.04) 74%);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-card {
+  width: min(520px, 100%);
+  padding: 44px 42px;
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.92);
+  box-shadow: var(--shadow);
+}
+
+.kicker,
+.section-kicker {
+  margin: 0 0 10px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-card h1 {
+  max-width: 470px;
+  margin: 0;
+  color: var(--text);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.hero-card p:not(.kicker) {
+  margin: 20px 0 26px;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.hero-search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.hero-search input {
+  padding: 0 16px;
+}
+
+.hero-search button {
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.map-pin {
+  position: absolute;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  border: 6px solid var(--white);
+  border-radius: 50% 50% 50% 0;
+  background: #ef4d3f;
+  box-shadow: 0 12px 22px rgba(10,31,68,.18);
+  transform: rotate(-45deg);
+}
+
+.map-pin::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 999px;
+  background: var(--white);
+}
+
+.map-pin i {
+  position: absolute;
+  left: 26px;
+  top: 38px;
+  width: 92px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--white);
+  box-shadow: 0 10px 20px rgba(10,31,68,.14);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  transform: rotate(45deg);
+}
+
+.map-pin--one { right: 33%; top: 30%; }
+.map-pin--two { right: 10%; top: 45%; }
+.map-pin--three { right: 46%; top: 54%; }
+
+.proof-section,
+.help-section,
+.sector-section,
+.request-section {
+  padding: 66px 0;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 62px;
+  align-items: center;
+}
+
+.proof-copy h2,
+.help-section h2,
+.section-head h2,
+.request-grid h2 {
+  margin: 0 0 20px;
+  color: var(--text);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.proof-copy p:not(.section-kicker),
+.request-grid p {
+  margin: 0 0 18px;
+  color: #26334d;
+}
+
+.map-panel {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.35)),
+    url("assets/cta-map-pins.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(6,29,73,.08);
+}
+
+.map-panel__badge {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 18px;
+  border-radius: 12px;
+  color: var(--white);
+  background: #26334d;
+  box-shadow: 0 14px 26px rgba(10,31,68,.16);
+}
+
+.map-panel__badge strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.map-panel__badge span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.map-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--white);
+  border-radius: 50% 50% 50% 0;
+  background: #ef4d3f;
+  transform: rotate(-45deg);
+  box-shadow: 0 5px 10px rgba(10,31,68,.22);
+}
+
+.dot-1 { left: 52%; top: 20%; }
+.dot-2 { left: 61%; top: 37%; }
+.dot-3 { left: 45%; top: 55%; }
+.dot-4 { left: 76%; top: 62%; }
+.dot-5 { left: 67%; top: 76%; }
+.dot-6 { left: 84%; top: 32%; }
+
+.help-section {
+  padding-top: 0;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.help-card {
+  min-height: 270px;
+  padding: 28px;
+  border-radius: 14px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(1,101,87,.38), transparent 40%),
+    linear-gradient(135deg, var(--navy), var(--navy-2));
+  box-shadow: 0 16px 34px rgba(6, 29, 73, 0.14);
+}
+
+.help-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border: 2px solid rgba(255,255,255,.82);
+  border-radius: 999px;
+}
+
+.help-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.help-card h3 {
+  margin: 0 0 12px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+.help-card p {
+  margin: 0 0 24px;
+  color: rgba(255,255,255,.88);
+}
+
+.help-card a {
+  color: #70b8ff;
+  font-weight: 700;
+}
+
+.markets-section {
+  padding: 36px 0 66px;
+  color: var(--white);
+  background: linear-gradient(180deg, var(--navy), #002f73);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.section-head a {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-head--light h2,
+.section-head--light a {
+  color: var(--white);
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.market-card {
+  padding: 18px;
+  border-radius: 16px;
+  color: var(--text);
+  background: var(--white);
+  box-shadow: 0 14px 28px rgba(0,0,0,.18);
+}
+
+.market-card__top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--white);
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px #d8e2ef;
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar--trade { background-image: url("assets/hero-plumber.jpg"); }
+.avatar--health { background-image: url("assets/deal-handshake.jpg"); }
+.avatar--legal { background-image: url("assets/deal-laptop-analytics.jpg"); }
+.avatar--beauty { background-image: url("assets/diff-pen-notebook.jpg"); }
+
+.market-card h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.market-card small {
+  padding: 4px 8px;
+  border: 1px solid #20c997;
+  border-radius: 999px;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.mini-map {
+  position: relative;
+  height: 64px;
+  margin: 14px 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background:
+    linear-gradient(90deg, transparent 0 48%, rgba(1,101,87,.22) 49% 51%, transparent 52%),
+    linear-gradient(0deg, transparent 0 48%, rgba(1,101,87,.18) 49% 51%, transparent 52%),
+    #eef5f3;
+}
+
+.mini-map i {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--green-2);
+  box-shadow: 0 0 0 3px rgba(10,138,118,.15);
+}
+
+.mini-map i:nth-child(1) { left: 22%; top: 28%; }
+.mini-map i:nth-child(2) { left: 52%; top: 48%; }
+.mini-map i:nth-child(3) { left: 77%; top: 24%; }
+
+.market-card p,
+.market-card span {
+  display: block;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.market-card strong {
+  display: block;
+  margin: 3px 0;
+  color: var(--text);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.market-card a {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sector-section {
+  background: var(--soft);
+}
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+
+.sector-card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 10px 22px rgba(10,31,68,.08);
+  text-align: center;
+}
+
+.sector-card__image {
+  display: block;
+  height: 116px;
+  background-position: center;
+  background-size: cover;
+}
+
+.sector-card__image--plumber { background-image: url("assets/hero-plumber.jpg"); }
+.sector-card__image--dentist { background-image: url("assets/deal-handshake.jpg"); }
+.sector-card__image--reforms { background-image: url("assets/deal-map-magnifier.jpg"); }
+.sector-card__image--electric { background-image: url("assets/diff-laptop-map.jpg"); }
+.sector-card__image--restaurant { background-image: url("assets/diff-pen-notebook.jpg"); }
+
+.sector-card strong {
+  display: block;
+  margin: 12px 10px 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sector-card small {
+  display: block;
+  margin: 2px 10px 16px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 58px;
+  align-items: start;
+}
+
+.request-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.request-form input,
+.request-form select {
+  padding: 0 14px;
+}
+
+.request-form select:nth-of-type(2),
+.request-form__check,
+.request-form button {
+  grid-column: 1 / -1;
+}
+
+.request-form__check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.request-form__check input {
+  width: 16px;
+  min-height: 16px;
+  margin-top: 1px;
+}
+
+.request-form button {
+  justify-self: start;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .hero__inner {
+    min-height: 560px;
+  }
+
+  .hero-card {
+    width: min(500px, 100%);
+  }
+
+  .proof-grid,
+  .request-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .help-grid,
+  .market-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .help-card {
+    padding: 22px;
+  }
+
+  .help-card h3 {
+    font-size: 20px;
+  }
+
+  .sector-grid {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-card {
+    padding: 32px 24px;
+  }
+
+  .hero-card h1 {
+    font-size: 36px;
+  }
+
+  .hero-search,
+  .request-form,
+  .help-grid,
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-pin--two {
+    display: none;
+  }
+}
