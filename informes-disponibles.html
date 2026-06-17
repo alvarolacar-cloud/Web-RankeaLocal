@@ -6,64 +6,44 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>Sectores e informes disponibles - LíderesMaps</title>
+  <title>Sectores e informes disponibles - LideresMaps</title>
   <meta name="description" content="Explora informes de oportunidad SEO local por sector y ciudad.">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="stylesheet" href="sectores.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="sectores.css?v=7">
 </head>
 <body>
-  <div class="topline">
-    <div class="container topline__inner">
-      <p>Mercados abiertos: Fontaneros Madrid · Abogados Sevilla · Fisioterapeutas Valencia</p>
-      <a href="informes-disponibles.html?v=2">Ver plazas disponibles</a>
-    </div>
-  </div>
-
   <header class="site-header">
-    <div class="container header__inner">
-      <a class="brand" href="index.html?v=3" aria-label="LíderesMaps inicio">
+    <div class="container header__inner header__top">
+      <a class="brand" href="index.html?v=12" aria-label="LideresMaps inicio">
         <span class="brand__pin" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M12 2.2c-4.05 0-7.35 3.3-7.35 7.35 0 5.5 7.35 12.25 7.35 12.25s7.35-6.75 7.35-12.25c0-4.05-3.3-7.35-7.35-7.35Z"></path>
             <circle cx="12" cy="9.55" r="2.8"></circle>
           </svg>
         </span>
-        <span>LíderesMaps</span>
+        <span>LideresMaps</span>
       </a>
-
-      <nav class="main-nav" aria-label="Principal">
-        <a href="#">Cómo funciona</a>
-        <a href="informes-disponibles.html?v=2">Sectores</a>
-        <a href="informes-disponibles.html?v=2">Informes</a>
-        <a href="#">Contacto</a>
-      </nav>
 
       <form class="header-search" action="#" role="search">
         <label class="sr-only" for="site-search">Busca tu sector o ciudad</label>
         <input id="site-search" type="search" placeholder="Busca tu sector o ciudad">
       </form>
 
-      <a class="btn btn--primary" href="#">Solicitar análisis</a>
+      <a class="btn btn--primary" href="index.html?v=12#contacto">Contacta</a>
+    </div>
+    <div class="header-sectors">
+      <div class="container header-sectors__inner">
+        <a class="header-sectors__label" href="informes-disponibles.html?v=2">Sectores Analizados</a>
+      </div>
     </div>
   </header>
-
-  <nav class="section-nav" aria-label="Categorías">
-    <div class="container section-nav__inner">
-      <a href="informes-disponibles.html?v=2">Sectores</a>
-      <a href="#hogar">Servicios del hogar</a>
-      <a href="#salud">Salud y bienestar</a>
-      <a href="#profesionales">Servicios profesionales</a>
-      <a href="#">Ciudades</a>
-      <a href="#">Más</a>
-    </div>
-  </nav>
 
   <main>
     <section class="sectors-hero">
       <div class="container sectors-hero__inner">
         <div class="sectors-hero__copy">
           <h1>Quién gana.<br>Cuánto mueve.<br>Cómo competir.</h1>
-          <p>Explora informes de SEO local por sector y ciudad: mira quién aparece primero en Google Maps y qué hace para conseguirlo.</p>
+          <p>Explora informes de SEO local por sector y ciudad: mira quien aparece primero en Google Maps y que hace para conseguirlo.</p>
           <form class="sectors-search" action="#">
             <label class="sr-only" for="sector-search">Busca tu sector o ciudad</label>
             <input id="sector-search" type="search" placeholder="Busca tu sector o ciudad">
@@ -128,25 +108,35 @@
     <section class="browse-section">
       <div class="container">
         <h2>Explora por sector</h2>
-        <div class="category-strip">
-          <button class="strip-arrow" type="button" aria-label="Anterior">‹</button>
-          <a class="category-card" href="fontaneros.html?v=1">
-            <span class="category-card__image category-card__image--plumber"></span>
-            <strong>Fontaneros</strong>
-          </a>
-          <a class="category-card" href="informes-disponibles.html">
-            <span class="category-card__image category-card__image--dentist"></span>
-            <strong>Dentistas</strong>
-          </a>
-          <a class="category-card" href="informes-disponibles.html">
-            <span class="category-card__image category-card__image--reforms"></span>
-            <strong>Reformas</strong>
-          </a>
-          <a class="category-card" href="informes-disponibles.html">
-            <span class="category-card__image category-card__image--electric"></span>
+        <div class="sector-market-grid">
+          <a class="sector-market-card sector-market-card--electricistas" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
             <strong>Electricistas</strong>
+            <b>13.500&euro;/mes</b>
+            <p>Servicios urgentes con demanda constante y llamadas de alta intencion.</p>
+            <span>6.200 busquedas/mes</span>
           </a>
-          <button class="strip-arrow" type="button" aria-label="Siguiente">›</button>
+          <a class="sector-market-card sector-market-card--peluquerias" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Peluquerias</strong>
+            <b>7.200&euro;/mes</b>
+            <p>Mercado local muy dependiente de cercania, resenas y disponibilidad.</p>
+            <span>4.000 busquedas/mes</span>
+          </a>
+          <a class="sector-market-card sector-market-card--restaurantes" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Restaurantes</strong>
+            <b>18.600&euro;/mes</b>
+            <p>Busqueda local frecuente donde fotos, valoraciones y ficha deciden.</p>
+            <span>12.200 busquedas/mes</span>
+          </a>
+          <a class="sector-market-card sector-market-card--gestorias" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Gestorias</strong>
+            <b>9.400&euro;/mes</b>
+            <p>Consultas profesionales donde aparecer cerca genera contactos cualificados.</p>
+            <span>3.700 busquedas/mes</span>
+          </a>
         </div>
       </div>
     </section>
@@ -154,7 +144,7 @@
     <section class="how-section">
       <div class="container how-grid">
         <div>
-          <h2>Cómo funciona</h2>
+          <h2>Como funciona</h2>
           <div class="steps">
             <article>
               <span><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg></span>
@@ -162,27 +152,27 @@
             </article>
             <article>
               <span><svg viewBox="0 0 24 24"><path d="M5 20V9M12 20V4M19 20v-7"></path></svg></span>
-              <div><h3>Analiza</h3><p>Mira el Top 3: cuánto mueve y qué hace para posicionar.</p></div>
+              <div><h3>Analiza</h3><p>Mira el Top 3: cuanto mueve y que hace para posicionar.</p></div>
             </article>
             <article>
               <span><svg viewBox="0 0 24 24"><path d="M5 19c7-1 12-6 14-14-8 2-13 7-14 14ZM9 15l-4 4M14 10l-4 4"></path></svg></span>
-              <div><h3>Mejora</h3><p>Lo implementas tú o lo hacemos nosotros.</p></div>
+              <div><h3>Mejora</h3><p>Lo implementas tu o lo hacemos nosotros.</p></div>
             </article>
           </div>
         </div>
 
         <article class="featured-report">
           <div class="featured-report__top">
-            <h3>Fontaneros · Madrid</h3>
+            <h3>Fontaneros &middot; Madrid</h3>
             <small>Informe 2026</small>
           </div>
           <div class="featured-report__body">
             <div class="big-map"><i></i><i></i><i></i></div>
             <dl>
-              <div><dt>Ingresos del Top 3</dt><dd>24.300€/mes</dd></div>
-              <div><dt>Búsquedas</dt><dd>14.800/mes</dd></div>
-              <div><dt>Ticket medio</dt><dd>300€</dd></div>
-              <div><dt>Reseñas del Top 3</dt><dd>~250</dd></div>
+              <div><dt>Ingresos del Top 3</dt><dd>24.300&euro;/mes</dd></div>
+              <div><dt>Busquedas</dt><dd>14.800/mes</dd></div>
+              <div><dt>Ticket medio</dt><dd>300&euro;</dd></div>
+              <div><dt>Resenas del Top 3</dt><dd>~250</dd></div>
               <div><dt>Demanda</dt><dd>Alta</dd></div>
             </dl>
           </div>
@@ -191,31 +181,38 @@
       </div>
     </section>
 
-    <section class="group-section" id="hogar">
+    <section class="group-section" id="tendencia">
       <div class="container">
-        <div class="section-title-row">
-          <h2>Sectores de servicios del hogar</h2>
-          <a href="informes-disponibles.html">Ver todos</a>
-        </div>
-        <div class="wide-card-grid">
-          <a class="wide-card" href="fontaneros.html?v=1"><span class="wide-card__image wide-card__image--plumber"></span><strong>Fontaneros</strong></a>
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--electric"></span><strong>Electricistas</strong></a>
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--reforms"></span><strong>Reformas</strong></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="group-section" id="salud">
-      <div class="container">
-        <div class="section-title-row">
-          <h2>Sectores de salud y profesionales</h2>
-          <a href="informes-disponibles.html">Ver todos</a>
-        </div>
-        <div class="wide-card-grid wide-card-grid--four">
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--dentist"></span><strong>Dentistas</strong></a>
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--physio"></span><strong>Fisioterapeutas</strong></a>
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--law"></span><strong>Abogados</strong></a>
-          <a class="wide-card" href="informes-disponibles.html"><span class="wide-card__image wide-card__image--office"></span><strong>Gestorías</strong></a>
+        <h2>Sectores en tendencia</h2>
+        <div class="sector-market-grid">
+          <a class="sector-market-card sector-market-card--fontaneros" href="fontaneros.html?v=1">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Fontaneros</strong>
+            <b>24.300&euro;/mes</b>
+            <p>El Top 3 concentra una parte grande de las llamadas urgentes.</p>
+            <span>14.800 busquedas/mes</span>
+          </a>
+          <a class="sector-market-card sector-market-card--dentistas" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Dentistas</strong>
+            <b>31.000&euro;/mes</b>
+            <p>Pacientes comparan clinicas por confianza antes de pedir cita.</p>
+            <span>9.100 busquedas/mes</span>
+          </a>
+          <a class="sector-market-card sector-market-card--abogados" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Abogados</strong>
+            <b>28.000&euro;/mes</b>
+            <p>Servicios de alto valor con consultas de intencion directa.</p>
+            <span>8.100 busquedas/mes</span>
+          </a>
+          <a class="sector-market-card sector-market-card--reformas" href="informes-disponibles.html">
+            <span class="sector-market-card__visual" aria-hidden="true"></span>
+            <strong>Reformas</strong>
+            <b>42.000&euro;/mes</b>
+            <p>Pocas busquedas pueden mover mucho por ticket medio alto.</p>
+            <span>5.400 busquedas/mes</span>
+          </a>
         </div>
       </div>
     </section>
@@ -223,6 +220,12 @@
     <section class="featured-section" id="profesionales">
       <div class="container">
         <h2>Informes destacados</h2>
+        <div class="directory-tabs report-filter-tabs" aria-label="Filtros de informes">
+          <span>Todos los informes</span>
+          <span>Servicios del hogar</span>
+          <span>Salud y bienestar</span>
+          <span>Servicios profesionales</span>
+        </div>
         <div class="reports-grid">
           <article class="report-card"><div class="report-card__top"><span class="mini-avatar mini-avatar--trade"></span><h3>Fontaneros · Madrid</h3><small>Informe 2026</small></div><div class="report-map"><i></i><i></i><i></i></div><p>Top 3 Google Maps</p><strong>24.300€/mes</strong><span>14.800 búsq/mes · Comp. alta</span><a href="fontaneros-madrid.html?v=1">Ver informe</a></article>
           <article class="report-card"><div class="report-card__top"><span class="mini-avatar mini-avatar--health"></span><h3>Dentistas · Barcelona</h3><small>Informe 2026</small></div><div class="report-map"><i></i><i></i><i></i></div><p>Top 3 Google Maps</p><strong>31.000€/mes</strong><span>9.100 búsq/mes · Comp. alta</span><a href="informes-disponibles.html">Ver informe</a></article>
@@ -238,7 +241,7 @@
 
     <section class="directory-section">
       <div class="container">
-        <h2>Explora todos los sectores</h2>
+        <h2>Explora todas las categorias</h2>
         <div class="directory-tabs" aria-label="Tipos de sectores">
           <span>Servicios del hogar</span>
           <span>Salud y bienestar</span>
@@ -253,26 +256,27 @@
           <a href="informes-disponibles.html">Electricistas</a>
           <a href="informes-disponibles.html">Jardineros</a>
           <a href="informes-disponibles.html">Fisioterapeutas</a>
-          <a href="informes-disponibles.html">Gestorías</a>
-          <a href="informes-disponibles.html">Cafeterías</a>
+          <a href="informes-disponibles.html">Gestorias</a>
+          <a href="informes-disponibles.html">Cafeterias</a>
           <a href="informes-disponibles.html">Reformas</a>
           <a href="informes-disponibles.html">Cristaleros</a>
-          <a href="informes-disponibles.html">Clínicas</a>
+          <a href="informes-disponibles.html">Clinicas</a>
           <a href="informes-disponibles.html">Inmobiliarias</a>
-          <a href="informes-disponibles.html">Peluquerías</a>
+          <a href="informes-disponibles.html">Peluquerias</a>
           <a href="informes-disponibles.html">Cerrajeros</a>
           <a href="informes-disponibles.html">Parquetistas</a>
-          <a href="informes-disponibles.html">Psicólogos</a>
+          <a href="informes-disponibles.html">Psicologos</a>
           <a href="informes-disponibles.html">Academias</a>
           <a href="informes-disponibles.html">Veterinarios</a>
           <a href="informes-disponibles.html">Carpinteros</a>
           <a href="informes-disponibles.html">Mudanzas</a>
-          <a href="informes-disponibles.html">Ópticas</a>
+          <a href="informes-disponibles.html">Opticas</a>
           <a href="informes-disponibles.html">Autoescuelas</a>
-          <a class="directory-more" href="informes-disponibles.html">Ver más (20+)</a>
+          <a class="directory-more" href="informes-disponibles.html">Ver mas categorias</a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -299,7 +303,7 @@
         <a href="informes-disponibles.html">Gestorías</a>
         <a href="informes-disponibles.html">Asesorías</a>
         <a href="informes-disponibles.html">Notarías</a>
-        <a href="informes-disponibles.html">Consultorías</a>
+        <a href="informes-disponibles.html">Consultoras</a>
       </section>
       <section>
         <h2>Producto</h2>
@@ -307,12 +311,12 @@
         <a href="informes-disponibles.html">Informes disponibles</a>
         <a href="#">Contacto</a>
         <div class="footer-social" aria-label="Redes sociales visuales">
-          <span>f</span><span>◎</span><span>in</span>
+          <span>f</span><span></span><span>in</span>
         </div>
       </section>
     </div>
     <div class="container footer-bottom">
-      <span>LíderesMaps © 2026</span>
+      <span>LideresMaps © 2026</span>
       <a href="#">Privacidad</a>
       <a href="#">Términos</a>
       <a href="#">Cookies</a>

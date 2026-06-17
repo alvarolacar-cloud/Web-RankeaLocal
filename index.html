@@ -6,326 +6,274 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>LíderesMaps - Informes de oportunidad en Google Maps</title>
+  <title>LideresMaps - Oportunidades en Google Maps</title>
   <meta name="description" content="Analizamos sectores y ciudades en Google Maps para detectar oportunidades reales de SEO local.">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="stylesheet" href="home.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="home.css?v=24">
 </head>
 <body>
-  <div class="topline">
-    <div class="container topline__inner">
-      <p>Mercados abiertos: Fontaneros Madrid · Abogados Sevilla · Fisioterapeutas Valencia</p>
-      <a href="informes-disponibles.html?v=2">Ver plazas disponibles</a>
-    </div>
-  </div>
-
   <header class="site-header">
-    <div class="container header__inner">
-      <a class="brand" href="index.html?v=3" aria-label="LíderesMaps inicio">
+    <div class="container header__inner header__top">
+      <a class="brand" href="index.html" aria-label="LideresMaps inicio">
         <span class="brand__pin" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M12 2.2c-4.05 0-7.35 3.3-7.35 7.35 0 5.5 7.35 12.25 7.35 12.25s7.35-6.75 7.35-12.25c0-4.05-3.3-7.35-7.35-7.35Z"></path>
             <circle cx="12" cy="9.55" r="2.8"></circle>
           </svg>
         </span>
-        <span>LíderesMaps</span>
+        <span>LideresMaps</span>
       </a>
 
-      <nav class="main-nav" aria-label="Principal">
-        <a href="#">Cómo funciona</a>
+      <nav class="home-nav" aria-label="Principal">
         <a href="informes-disponibles.html?v=2">Sectores</a>
-        <a href="informes-disponibles.html?v=2">Informes</a>
-        <a href="#">Contacto</a>
+        <a href="fontaneros.html?v=1">Analisis</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
-      <form class="header-search" action="#" role="search">
-        <label class="sr-only" for="site-search">Busca tu sector o ciudad</label>
-        <input id="site-search" type="search" placeholder="Busca tu sector o ciudad">
-      </form>
-
-      <a class="btn btn--primary" href="informes-disponibles.html?v=2">Explorar sectores</a>
+      <a class="btn btn--primary" href="#contacto">Solicitar analisis</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__map image-slot image-slot--photo"></div>
-        <span class="map-pin map-pin--one"><i>4,8 ★★★★★</i></span>
-        <span class="map-pin map-pin--two"><i>4,9 ★★★★★</i></span>
-        <span class="map-pin map-pin--three"><i>4,7 ★★★★★</i></span>
-      </div>
-
-      <div class="container hero__inner">
-        <div class="hero-card">
-          <p class="kicker">SEO local con datos reales</p>
-          <h1>¿Quién aparece primero en Google Maps en tu ciudad?</h1>
-          <p>Analizamos a los líderes de tu sector y ciudad en Google Maps, te enseñamos qué hacen para aparecer arriba y detectamos si todavía hay una oportunidad para ti.</p>
-          <form class="hero-search" action="#">
-            <label class="sr-only" for="hero-search">Busca tu negocio o sector en tu ciudad</label>
-            <input id="hero-search" type="search" placeholder="Busca tu negocio o sector en tu ciudad">
-            <button type="submit">Buscar análisis</button>
-          </form>
-        </div>
+  <main class="home-upwork">
+    <section class="top-offer">
+      <div class="container top-offer__inner">
+        <span>Mercados abiertos: Fontaneros Madrid, Abogados Sevilla y Dentistas Barcelona</span>
+        <a href="informes-disponibles.html?v=2">Ver plazas</a>
       </div>
     </section>
 
-    <section class="proof-section">
-      <div class="container proof-grid">
-        <div class="proof-copy">
-          <p class="section-kicker">Cómo funciona</p>
-          <h2>Datos reales, no opiniones</h2>
-          <p>Cada día miles de personas buscan negocios como el tuyo en Google Maps, y solo unos pocos se quedan con la mayoría de llamadas, visitas y presupuestos.</p>
-          <p>Analizamos el Top 3 de cada sector en cada ciudad: búsquedas reales, ficha de Google, reseñas, publicaciones, categorías, servicios y señales locales.</p>
-          <p>Con ese análisis sabes exactamente qué hacen los que ganan y qué hueco queda para competir. Sin humo y sin teoría: la foto real de tu mercado.</p>
-        </div>
-
-        <div class="map-panel">
-          <div class="map-panel__badge">
-            <strong>Negocios locales de Madrid</strong>
-            <span>+3,2 M búsquedas/mes</span>
-            <span>+480 M€ al año</span>
+    <section class="up-hero">
+      <div class="container">
+        <div class="up-hero__panel">
+          <div class="up-hero__media" aria-hidden="true"></div>
+          <div class="up-hero__overlay"></div>
+          <div class="up-hero__content">
+            <h1>Cuanto dinero pierdes por no salir en Google Maps?</h1>
+            <p>Calculamos cuanto mueve tu sector, quien se lleva las llamadas y que trabajo necesitas para competir por el Top 3.</p>
+            <div class="hero-switch" aria-label="Tipo de analisis">
+              <span>Quiero ver mi sector</span>
+              <span>Quiero analizar mi negocio</span>
+            </div>
+            <form class="hero-query" action="informes-disponibles.html">
+              <label class="sr-only" for="hero-query">Describe tu sector o ciudad</label>
+              <input id="hero-query" type="search" placeholder="Ej: fontaneros en Madrid">
+              <button type="submit">Buscar</button>
+            </form>
+            <div class="hero-pills" aria-label="Sectores populares">
+              <a href="fontaneros.html?v=1">Fontaneros</a>
+              <a href="informes-disponibles.html?v=2">Dentistas</a>
+              <a href="informes-disponibles.html?v=2">Reformas</a>
+              <a href="informes-disponibles.html?v=2">Abogados</a>
+            </div>
           </div>
-          <span class="map-dot dot-1"></span>
-          <span class="map-dot dot-2"></span>
-          <span class="map-dot dot-3"></span>
-          <span class="map-dot dot-4"></span>
-          <span class="map-dot dot-5"></span>
-          <span class="map-dot dot-6"></span>
         </div>
       </div>
     </section>
 
-    <section class="help-section">
+    <section class="trusted-strip">
       <div class="container">
-        <h2>Cómo te ayudamos</h2>
-        <div class="help-grid">
-          <article class="help-card">
-            <span class="help-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M7 11a4 4 0 1 1 8 0M3.5 20a7.5 7.5 0 0 1 15 0M17 8a3 3 0 1 1 3 3M18.5 14.5A5 5 0 0 1 22 19"></path></svg>
-            </span>
-            <h3>Te decimos quién gana</h3>
-            <p>Identificamos el Top 3 de tu sector y desglosamos exactamente qué hacen para aparecer primero.</p>
-            <a href="fontaneros-madrid.html">Ver un ejemplo</a>
-          </article>
-          <article class="help-card">
-            <span class="help-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M8 4h8l2 3v13H6V7l2-3ZM9 10h6M9 14h6M9 18h4"></path></svg>
-            </span>
-            <h3>Te damos el plan</h3>
-            <p>Recibes prioridades claras: ficha, reseñas, categorías, contenido, enlaces y señales locales.</p>
-            <a href="#">Cómo trabajamos</a>
-          </article>
-          <article class="help-card">
-            <span class="help-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M5 19c7-1 12-6 14-14-8 2-13 7-14 14ZM9 15l-4 4M14 10l-4 4"></path></svg>
-            </span>
-            <h3>Lo hacemos por ti</h3>
-            <p>Si quieres avanzar, ejecutamos lo necesario para que tu negocio compita por las primeras posiciones.</p>
-            <a href="#">Hablar con nosotros</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="markets-section">
-      <div class="container">
-        <div class="section-head section-head--light">
-          <h2>Explora por sector y ciudad</h2>
-          <a href="informes-disponibles.html?v=2">Ver todos</a>
-        </div>
-        <div class="market-grid">
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--trade"></span>
-              <h3>Fontaneros · Madrid</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>24.300€/mes</strong>
-            <span>14.800 búsq/mes · Comp. alta</span>
-            <a href="fontaneros-madrid.html">Ver informe</a>
-          </article>
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--health"></span>
-              <h3>Dentistas · Barcelona</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>31.000€/mes</strong>
-            <span>9.100 búsq/mes · Comp. alta</span>
-            <a href="informes-disponibles.html?v=2">Ver informe</a>
-          </article>
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--legal"></span>
-              <h3>Abogados · Sevilla</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>28.000€/mes</strong>
-            <span>8.100 búsq/mes · Comp. media</span>
-            <a href="informes-disponibles.html?v=2">Ver informe</a>
-          </article>
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--trade"></span>
-              <h3>Reformas · Sevilla</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>42.000€/mes</strong>
-            <span>5.400 búsq/mes · Comp. media</span>
-            <a href="informes-disponibles.html?v=2">Ver informe</a>
-          </article>
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--trade"></span>
-              <h3>Electricistas · Madrid</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>13.500€/mes</strong>
-            <span>6.200 búsq/mes · Comp. alta</span>
-            <a href="informes-disponibles.html?v=2">Ver informe</a>
-          </article>
-          <article class="market-card">
-            <div class="market-card__top">
-              <span class="avatar avatar--beauty"></span>
-              <h3>Peluquerías · Málaga</h3>
-              <small>Informe 2026</small>
-            </div>
-            <div class="mini-map"><i></i><i></i><i></i></div>
-            <p>Top 3 Google Maps</p>
-            <strong>7.200€/mes</strong>
-            <span>4.000 búsq/mes · Comp. baja</span>
-            <a href="informes-disponibles.html?v=2">Ver informe</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="sector-section">
-      <div class="container">
-        <div class="section-head">
-          <h2>¿Qué ocurre en tu sector?</h2>
-          <a href="informes-disponibles.html?v=2">Ver todos los sectores</a>
-        </div>
-        <div class="sector-grid">
-          <a class="sector-card" href="fontaneros.html?v=1">
-            <span class="sector-card__image sector-card__image--plumber"></span>
-            <strong>Fontanería</strong>
-            <small>15 mercados</small>
-          </a>
-          <a class="sector-card" href="informes-disponibles.html?v=2">
-            <span class="sector-card__image sector-card__image--dentist"></span>
-            <strong>Dentistas</strong>
-            <small>12 mercados</small>
-          </a>
-          <a class="sector-card" href="informes-disponibles.html?v=2">
-            <span class="sector-card__image sector-card__image--reforms"></span>
-            <strong>Reformas</strong>
-            <small>14 mercados</small>
-          </a>
-          <a class="sector-card" href="informes-disponibles.html?v=2">
-            <span class="sector-card__image sector-card__image--electric"></span>
-            <strong>Electricistas</strong>
-            <small>14 mercados</small>
-          </a>
-          <a class="sector-card" href="informes-disponibles.html?v=2">
-            <span class="sector-card__image sector-card__image--restaurant"></span>
-            <strong>Restauración</strong>
-            <small>11 mercados</small>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="request-section">
-      <div class="container request-grid">
+        <p>DATOS REALES DE GOOGLE MAPS</p>
         <div>
-          <p class="section-kicker">Solicita tu análisis</p>
-          <h2>Pide un análisis de tu mercado</h2>
-          <p>Dinos tu sector y ciudad y te diremos si hay oportunidad real, quién domina el mapa y qué tendrías que hacer para competir.</p>
+          <span>+120 mercados</span>
+          <span>1 socio por ciudad</span>
+          <span>Informes 2026</span>
+          <span>Sin estimaciones inventadas</span>
+          <span>Trabajo accionable</span>
         </div>
-        <form class="request-form" action="#">
-          <label class="sr-only" for="name">Nombre</label>
-          <input id="name" type="text" placeholder="Nombre">
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" type="email" placeholder="Email">
-          <label class="sr-only" for="sector">Sector</label>
-          <select id="sector">
-            <option>Sector</option>
-            <option>Fontaneros</option>
-            <option>Dentistas</option>
-            <option>Abogados</option>
-            <option>Electricistas</option>
-          </select>
-          <label class="sr-only" for="city">Ciudad</label>
-          <input id="city" type="text" placeholder="Ciudad">
-          <select aria-label="Quieres que lo implementemos por ti">
-            <option>¿Quieres que lo implementemos por ti?</option>
-            <option>Sí</option>
-            <option>No</option>
-          </select>
-          <label class="request-form__check">
-            <input type="checkbox">
-            Acepto recibir el análisis y comunicaciones de LíderesMaps.
-          </label>
-          <button class="btn btn--primary" type="submit">Recibir análisis</button>
-        </form>
+      </div>
+    </section>
+
+    <section class="category-section">
+      <div class="container">
+        <h2>Contactos desde Google y facturacion por sector</h2>
+        <div class="sector-opportunity-grid">
+          <a class="sector-opportunity-card sector-opportunity-card--fontaneros" href="fontaneros.html?v=1">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Fontaneros</strong>
+            <b>24.300&euro;/mes</b>
+            <p>El Top 3 concentra una parte grande de las llamadas urgentes.</p>
+            <span>14.800 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--dentistas" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Dentistas</strong>
+            <b>31.000&euro;/mes</b>
+            <p>Pacientes comparan clinicas por confianza antes de pedir cita.</p>
+            <span>9.100 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--abogados" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Abogados</strong>
+            <b>28.000&euro;/mes</b>
+            <p>Servicios de alto valor con consultas de intencion directa.</p>
+            <span>8.100 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--reformas" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Reformas</strong>
+            <b>42.000&euro;/mes</b>
+            <p>Pocas busquedas pueden mover mucho por ticket medio alto.</p>
+            <span>5.400 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--electricistas" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Electricistas</strong>
+            <b>13.500&euro;/mes</b>
+            <p>Servicios urgentes con demanda constante y llamadas de alta intencion.</p>
+            <span>6.200 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--peluquerias" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Peluquerias</strong>
+            <b>7.200&euro;/mes</b>
+            <p>La cercania, las resenas y la disponibilidad deciden muchas visitas.</p>
+            <span>4.000 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--restaurantes" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Restaurantes</strong>
+            <b>18.600&euro;/mes</b>
+            <p>Fotos, valoraciones y horarios convierten busquedas en reservas.</p>
+            <span>12.200 busquedas/mes</span>
+          </a>
+          <a class="sector-opportunity-card sector-opportunity-card--gestorias" href="informes-disponibles.html?v=2">
+            <span class="sector-opportunity-card__visual" aria-hidden="true"></span>
+            <strong>Gestorias</strong>
+            <b>9.400&euro;/mes</b>
+            <p>Consultas profesionales donde aparecer cerca genera contactos cualificados.</p>
+            <span>3.700 busquedas/mes</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-visual" id="como-funciona">
+      <div class="container">
+        <div class="section-row">
+          <h2>Como funciona</h2>
+          <div class="segmented" aria-label="Modo de trabajo"><span>Analisis</span><span>Implementacion</span></div>
+        </div>
+        <div class="how-visual__grid">
+          <article class="how-visual__item">
+            <span class="how-image how-image--one"><i></i></span>
+            <h3>Medimos el mercado</h3>
+            <p>Partimos de busquedas reales en Google Maps, estimamos contactos y traducimos la demanda en facturacion potencial por sector y ciudad.</p>
+          </article>
+          <article class="how-visual__item">
+            <span class="how-image how-image--two"><i></i><i></i><i></i></span>
+            <h3>Comparamos al Top 3</h3>
+            <p>Revisamos que hacen quienes ya aparecen arriba: resenas, ficha, fotos, categorias, servicios, publicaciones y senales locales.</p>
+          </article>
+          <article class="how-visual__item">
+            <span class="how-image how-image--three"><i></i></span>
+            <h3>Convertimos datos en plan</h3>
+            <p>Ordenamos el trabajo por impacto: que corregir primero, que mantener cada semana y que acciones pueden acercarte al Top 3.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights-panel">
+      <div class="container">
+        <div class="insights-panel__inner">
+          <div>
+            <h2>Calcula cuanto captura el Top 3 de tu sector</h2>
+            <p>Usamos demanda local, intencion de busqueda y senales de Google Maps para convertir visibilidad en oportunidad economica.</p>
+            <form class="insight-search" action="informes-disponibles.html">
+              <input type="search" placeholder="Describe tu sector y ciudad">
+              <button type="submit">Ver</button>
+            </form>
+          </div>
+          <div class="insight-meter" aria-hidden="true">
+            <span>Bajo</span>
+            <b>Alto</b>
+            <i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans-section">
+      <div class="container">
+        <h2>Elige como quieres trabajar</h2>
+        <p class="section-subtitle">Dos formas de usar el analisis segun lo que necesites: claridad para decidir o acompanamiento para ejecutar.</p>
+        <div class="plans-grid">
+          <article>
+            <h3>Solo informe</h3>
+            <p>Para negocios que quieren saber si su sector y ciudad merecen la pelea antes de invertir tiempo o presupuesto. Te llevas una fotografia clara del mercado, del Top 3 y de la brecha real.</p>
+            <ul>
+              <li>Estimacion de facturacion mensual capturada por el Top 3</li>
+              <li>Busquedas, llamadas potenciales, competencia y demanda local</li>
+              <li>Comparativa de resenas, ficha, fotos, servicios y publicaciones</li>
+              <li>Diagnostico de lo que separa tu negocio de los primeros puestos</li>
+              <li>Prioridades ordenadas por impacto para que no trabajes a ciegas</li>
+            </ul>
+            <a href="fontaneros-madrid.html?v=1">Ver ejemplo</a>
+          </article>
+          <article class="plan-featured">
+            <span>POPULAR</span>
+            <h3>Informe + implementacion</h3>
+            <p>Para negocios que no quieren quedarse solo con el diagnostico. Analizamos el mercado, bajamos el plan a acciones concretas y trabajamos la ficha y las senales locales con foco en aparecer mejor.</p>
+            <ul>
+              <li>Optimizacion de Google Business Profile con servicios y categorias</li>
+              <li>Plan de resenas, respuestas, fotos y publicaciones recurrentes</li>
+              <li>Mejoras de SEO local, citaciones y coherencia NAP</li>
+              <li>Calendario de acciones semanales para sostener el avance</li>
+              <li>Seguimiento de posicion, llamadas y oportunidades detectadas</li>
+            </ul>
+            <a href="#contacto">Solicitar analisis</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="container">
+        <h2>Resultados probados en mercados locales</h2>
+        <div class="results-grid">
+          <article><p>"El informe nos enseno exactamente por que otros aparecian arriba y que teniamos que corregir primero."</p><strong>Fontaneros Madrid</strong></article>
+          <article><p>"Pasamos de hablar de SEO en abstracto a saber que ficha, resenas y servicios habia que trabajar."</p><strong>Clinica dental Barcelona</strong></article>
+          <article><p>"Nos ayudo a decidir si merecia la pena pelear Google Maps antes de invertir meses a ciegas."</p><strong>Despacho profesional</strong></article>
+          <article><p>"Vimos donde estaba el dinero: llamadas, busquedas y diferencia real frente al Top 3."</p><strong>Reformas Sevilla</strong></article>
+          <article><p>"El plan salio ordenado por impacto, no por una lista generica de tareas."</p><strong>Electricistas Madrid</strong></article>
+          <article><p>"Nos quedamos con la plaza porque no queriamos que otro negocio trabajara el mismo mercado."</p><strong>Restaurante Valencia</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-badges">
+      <div class="container">
+        <h2>Confianza para decidir antes de invertir</h2>
+        <div class="badge-grid" aria-label="Indicadores de confianza">
+          <span>Top 3 analizado</span>
+          <span>Datos GBP</span>
+          <span>Busqueda local</span>
+          <span>Competencia</span>
+          <span>Plan accionable</span>
+          <span>Exclusividad</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-cta" id="contacto">
+      <div class="container">
+        <div class="home-cta__inner">
+          <h2>Descubre cuanto dinero deja de captar tu negocio en Google Maps</h2>
+          <a class="btn btn--primary" href="mailto:hola@lideresmaps.com">Solicitar analisis</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer__inner">
-      <section>
-        <h2>Servicios del hogar</h2>
-        <a href="fontaneros.html?v=1">Fontaneros</a>
-        <a href="informes-disponibles.html?v=2">Electricistas</a>
-        <a href="informes-disponibles.html?v=2">Reformas</a>
-        <a href="informes-disponibles.html?v=2">Carpinteros</a>
-        <a href="informes-disponibles.html?v=2">Cerrajeros</a>
-      </section>
-      <section>
-        <h2>Salud y bienestar</h2>
-        <a href="informes-disponibles.html?v=2">Dentistas</a>
-        <a href="informes-disponibles.html?v=2">Fisioterapeutas</a>
-        <a href="informes-disponibles.html?v=2">Clínicas dentales</a>
-        <a href="informes-disponibles.html?v=2">Psicólogos</a>
-        <a href="informes-disponibles.html?v=2">Gimnasios</a>
-      </section>
-      <section>
-        <h2>Servicios profesionales</h2>
-        <a href="informes-disponibles.html?v=2">Abogados</a>
-        <a href="informes-disponibles.html?v=2">Gestorías</a>
-        <a href="informes-disponibles.html?v=2">Asesorías</a>
-        <a href="informes-disponibles.html?v=2">Notarías</a>
-        <a href="informes-disponibles.html?v=2">Consultorías</a>
-      </section>
-      <section>
-        <h2>Producto</h2>
-        <a href="#">Cómo funciona</a>
-        <a href="informes-disponibles.html?v=2">Informes disponibles</a>
-        <a href="#">Contacto</a>
-        <div class="footer-social" aria-label="Redes sociales visuales">
-          <span>f</span><span>◎</span><span>in</span>
-        </div>
-      </section>
+      <section><h2>Servicios del hogar</h2><a href="fontaneros.html?v=1">Fontaneros</a><a href="informes-disponibles.html?v=2">Electricistas</a><a href="informes-disponibles.html?v=2">Reformas</a></section>
+      <section><h2>Salud y bienestar</h2><a href="informes-disponibles.html?v=2">Dentistas</a><a href="informes-disponibles.html?v=2">Fisioterapeutas</a><a href="informes-disponibles.html?v=2">Clinicas dentales</a></section>
+      <section><h2>Producto</h2><a href="informes-disponibles.html?v=2">Sectores Analizados</a><a href="fontaneros.html?v=1">Analisis por sector</a><a href="#contacto">Contacto</a></section>
+      <section><h2>LideresMaps</h2><p>Analisis de oportunidad SEO local con datos reales de Google Maps.</p></section>
     </div>
-    <div class="container footer-bottom">
-      <span>LíderesMaps © 2026</span>
-      <a href="#">Privacidad</a>
-      <a href="#">Términos</a>
-      <a href="#">Cookies</a>
-    </div>
+    <div class="container footer-bottom"><span>LideresMaps &copy; 2026</span><a href="#contacto">Privacidad</a><a href="#contacto">Terminos</a><a href="#contacto">Cookies</a></div>
   </footer>
 </body>
 </html>

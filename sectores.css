@@ -1,3 +1,11 @@
+.container {
+  width: min(100% - 64px, 1280px);
+}
+
+main {
+  background: #ffffff;
+}
+
 .section-nav {
   border-bottom: 1px solid var(--line);
   background: var(--white);
@@ -19,7 +27,7 @@
 }
 
 .sectors-hero {
-  padding: 24px 0 34px;
+  padding: 24px 0 0;
 }
 
 .sectors-hero__inner {
@@ -31,25 +39,26 @@
   overflow: hidden;
   padding: 46px 42px;
   border-radius: 16px;
-  color: var(--white);
+  color: #fff8df;
   background:
-    radial-gradient(circle at 78% 30%, rgba(26, 115, 232, 0.35), transparent 34%),
-    linear-gradient(135deg, #061d49, #052a63 58%, #04152f);
+    radial-gradient(circle at 82% 18%, rgba(255, 248, 223, .18), transparent 26%),
+    linear-gradient(115deg, #005442 0%, #245a3d 58%, #163b2e 100%);
 }
 
 .sectors-hero__copy h1 {
   margin: 0 0 20px;
-  color: var(--white);
+  color: #fff8df;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.06;
 }
 
 .sectors-hero__copy p {
   max-width: 430px;
   margin: 0 0 28px;
-  color: rgba(255,255,255,.9);
+  color: rgba(255,248,223,.93);
   font-size: 16px;
+  line-height: 1.48;
 }
 
 .sectors-search {
@@ -67,7 +76,7 @@
   background:
     radial-gradient(circle at 20px 50%, transparent 6px, #667085 6.5px, #667085 7.5px, transparent 8px),
     linear-gradient(45deg, transparent 46%, #667085 47%, #667085 58%, transparent 59%),
-    var(--white);
+    #fff8df;
   background-position: left top, 27px 27px, left top;
   background-size: 38px 48px, 10px 10px, auto;
   background-repeat: no-repeat;
@@ -78,16 +87,16 @@
   flex-wrap: wrap;
   gap: 9px;
   align-items: center;
-  color: var(--white);
+  color: #fff8df;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .popular-tags a {
   padding: 6px 12px;
-  border: 1px solid rgba(255,255,255,.75);
+  border: 1px solid rgba(255,248,223,.72);
   border-radius: 999px;
-  color: var(--white);
+  color: #fff8df;
 }
 
 .hero-report-stack {
@@ -97,11 +106,11 @@
 
 .floating-report,
 .report-card {
-  border: 1px solid #dfe6ef;
+  border: 1px solid rgba(20, 33, 61, .14);
   border-radius: 12px;
   color: var(--text);
   background: var(--white);
-  box-shadow: 0 16px 32px rgba(0,0,0,.18);
+  box-shadow: 0 18px 38px rgba(17, 39, 30, .22);
 }
 
 .floating-report {
@@ -141,7 +150,7 @@
 .report-card h3 {
   margin: 0;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .floating-report small,
@@ -152,7 +161,7 @@
   border-radius: 999px;
   color: var(--green);
   font-size: 9px;
-  font-weight: 800;
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -215,11 +224,22 @@
 }
 
 .browse-section,
+.group-section,
+.directory-section {
+  background: #faf7eb;
+}
+
+.how-section,
+.featured-section {
+  background: #ffffff;
+}
+
+.browse-section,
 .how-section,
 .group-section,
 .featured-section,
 .directory-section {
-  padding: 28px 0;
+  padding: 36px 0;
 }
 
 .browse-section h2,
@@ -230,7 +250,7 @@
   margin: 0 0 22px;
   color: var(--text);
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.16;
 }
 
@@ -277,7 +297,7 @@
   padding: 13px 14px;
   color: var(--text);
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .category-card__image--plumber,
@@ -291,6 +311,92 @@
 .wide-card__image--electric { background-image: url("assets/diff-laptop-map.jpg"); }
 .wide-card__image--law { background-image: url("assets/deal-laptop-analytics.jpg"); }
 .wide-card__image--office { background-image: url("assets/diff-pen-notebook.jpg"); }
+
+.sector-market-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sector-market-card {
+  min-height: 316px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgba(20, 33, 61, .16);
+  border-radius: 10px;
+  color: #0b1220;
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 22px rgba(57, 47, 24, .08);
+  transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+
+.sector-market-card:hover {
+  transform: translateY(-1px);
+  border-color: #aebfda;
+  box-shadow: 0 10px 22px rgba(10,31,68,.09);
+}
+
+.sector-market-card__visual {
+  display: block;
+  height: 128px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f7fb var(--sector-card-image) center / cover no-repeat;
+}
+
+.sector-market-card strong,
+.sector-market-card b,
+.sector-market-card p,
+.sector-market-card span {
+  display: block;
+  padding: 0 6px;
+}
+
+.sector-market-card strong {
+  min-height: 22px;
+  color: #0b1220;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sector-market-card b {
+  margin-top: 4px;
+  color: #14213d;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.sector-market-card p {
+  display: -webkit-box;
+  min-height: 38px;
+  margin: 10px 0 12px;
+  overflow: hidden;
+  color: #40516a;
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.sector-market-card span:not(.sector-market-card__visual) {
+  margin-top: auto;
+  color: #42536a;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sector-market-card--fontaneros { --sector-card-image: url("assets/sector-card-fontaneros.png?v=2"); }
+.sector-market-card--dentistas { --sector-card-image: url("assets/sector-card-dentistas.png?v=2"); }
+.sector-market-card--abogados { --sector-card-image: url("assets/sector-card-abogados.png?v=2"); }
+.sector-market-card--reformas { --sector-card-image: url("assets/sector-card-reformas.png?v=2"); }
+.sector-market-card--electricistas { --sector-card-image: url("assets/sector-card-reformas.png?v=2"); }
+.sector-market-card--peluquerias { --sector-card-image: url("assets/sector-card-dentistas.png?v=2"); }
+.sector-market-card--restaurantes { --sector-card-image: url("assets/sector-card-fontaneros.png?v=2"); }
+.sector-market-card--gestorias { --sector-card-image: url("assets/sector-card-abogados.png?v=2"); }
 
 .how-grid {
   display: grid;
@@ -332,7 +438,7 @@
   margin: 0 0 4px;
   color: var(--text);
   font-size: 19px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .steps p {
@@ -360,7 +466,7 @@
   margin: 0;
   color: var(--text);
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .featured-report__body {
@@ -394,7 +500,7 @@
 }
 
 .featured-report dd {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .featured-report__cta {
@@ -406,7 +512,7 @@
   border-radius: 7px;
   color: var(--white);
   background: var(--blue);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .section-title-row {
@@ -418,7 +524,7 @@
 
 .section-title-row a {
   color: var(--blue);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .wide-card-grid {
@@ -433,6 +539,7 @@
 
 .featured-section {
   padding-top: 34px;
+  padding-bottom: 52px;
 }
 
 .reports-grid {
@@ -443,12 +550,12 @@
 
 .report-card {
   padding: 12px;
-  box-shadow: 0 10px 22px rgba(10,31,68,.08);
+  box-shadow: 0 10px 22px rgba(57, 47, 24, .08);
 }
 
 .report-card strong {
   color: var(--text);
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .report-card a {
@@ -456,7 +563,7 @@
   margin-top: 12px;
   color: var(--blue);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .directory-section {
@@ -470,7 +577,13 @@
   border-bottom: 1px solid #dfe6ef;
   color: var(--text);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.report-filter-tabs {
+  margin-bottom: 22px;
 }
 
 .directory-tabs span {
@@ -495,7 +608,7 @@
 
 .directory-grid .directory-more {
   color: var(--green);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 @media (max-width: 980px) {
@@ -561,6 +674,7 @@
     grid-template-columns: 1fr;
   }
 
+  .sector-market-grid,
   .reports-grid,
   .wide-card-grid--four {
     grid-template-columns: repeat(2, 1fr);
@@ -573,7 +687,14 @@
 
 @media (max-width: 640px) {
   .sectors-hero__inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
     padding: 32px 22px;
+  }
+
+  .sectors-hero__copy p,
+  .sectors-search {
+    max-width: none;
   }
 
   .sectors-hero__copy h1 {
@@ -592,7 +713,12 @@
     transform: none;
   }
 
+  .floating-report:nth-child(n+2) {
+    display: none;
+  }
+
   .category-strip,
+  .sector-market-grid,
   .wide-card-grid,
   .wide-card-grid--four,
   .reports-grid,
