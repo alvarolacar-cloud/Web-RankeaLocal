@@ -1,31 +1,46 @@
 # LideresMaps
 
-Web estática para **LideresMaps**, un servicio que analiza oportunidades de SEO local en Google Maps por sector y ciudad.
+Web estatica para LideresMaps, un servicio que analiza oportunidades de SEO local en Google Maps por sector y ciudad, y las traduce en decisiones comerciales: que mercado merece la pena, cuanto puede mover el Top 3 y que trabajo hace falta para competir.
 
-La idea principal de la web es explicar, de forma visual y comercial, qué negocios aparecen arriba en Google Maps, cuánto puede mover cada mercado local y qué trabajo habría que hacer para competir con los líderes.
+## Paginas actuales
 
-## Páginas actuales
+- `index.html`: home principal. Presenta la propuesta "Webs y SEO con datos", el analisis previo, las cards de servicios, el proceso compacto y las oportunidades por sector.
+- `informes-disponibles.html`: pagina general de sectores analizados e informes disponibles. Agrupa mercados, categorias e informes destacados.
+- `fontaneros.html`: pagina especifica del sector Fontaneros. Lista informes por ciudad y resume cifras del sector.
+- `fontaneros-madrid.html`: informe especifico de Fontaneros en Madrid. Muestra metricas, preview del analisis, comparativas del Top 3 y el trabajo que haria LideresMaps.
 
-- `index.html`: home principal. Presenta el servicio, el problema de visibilidad local y los mercados destacados.
-- `informes-disponibles.html`: página general de sectores e informes disponibles.
-- `fontaneros.html`: página específica del sector Fontaneros, con informes por ciudad.
-- `fontaneros-madrid.html`: informe específico de Fontaneros en Madrid. Muestra métricas, preview del análisis, Top 3, comparativas y el bloque de trabajo que haría LideresMaps.
+## Archivos principales
 
-## Estructura
-
-- `styles.css`: estilos globales compartidos.
+- `styles.css`: estilos globales, header, footer y componentes compartidos.
 - `home.css`: estilos de la home.
-- `sectores.css`: estilos de la página general de sectores.
-- `fontaneros.css`: estilos de la página del sector Fontaneros.
-- `informe.css`: estilos del informe específico.
-- `assets/`: imágenes locales usadas por las páginas.
+- `sectores.css`: estilos de `informes-disponibles.html`.
+- `fontaneros.css`: estilos de `fontaneros.html`.
+- `informe.css`: estilos de `fontaneros-madrid.html`.
+- `assets/`: imagenes locales usadas por las paginas.
+
+## Navegacion actual
+
+Flujo principal:
+
+```text
+Home -> Informes disponibles -> Fontaneros -> Fontaneros Madrid
+```
+
+Rutas locales:
+
+```text
+http://127.0.0.1:4173/index.html
+http://127.0.0.1:4173/informes-disponibles.html
+http://127.0.0.1:4173/fontaneros.html
+http://127.0.0.1:4173/fontaneros-madrid.html
+```
 
 ## Ejecutar en local
 
-Desde la raíz del proyecto:
+Desde la raiz del proyecto:
 
 ```bash
-python -m http.server 4173
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
 Luego abrir:
@@ -34,12 +49,6 @@ Luego abrir:
 http://127.0.0.1:4173/index.html
 ```
 
-## Navegación actual
+## Estado del proyecto
 
-El flujo principal es:
-
-```text
-Home -> Informes disponibles -> Fontaneros -> Fontaneros Madrid
-```
-
-La web no enlaza a servicios externos. Los enlaces que aún no tienen página final permanecen como enlaces internos o inertes.
+Proyecto HTML/CSS estatico. La web no debe enlazar a paginas externas ni a rutas que no existan todavia; la navegacion debe mantenerse entre las paginas reales del proyecto.

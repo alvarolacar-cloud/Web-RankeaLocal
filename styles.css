@@ -1,8 +1,8 @@
 :root {
-  --green: #016557;
-  --green-2: #0a8a76;
-  --navy: #061d49;
-  --navy-2: #082a63;
+  --green: #005442;
+  --green-2: #13aa70;
+  --navy: #111111;
+  --navy-2: #1f2937;
   --blue: #0b63f6;
   --text: #14213d;
   --body: #323232;
@@ -118,21 +118,22 @@ button {
 }
 
 .site-header .container {
-  width: min(100% - 48px, 1180px);
+  width: calc(100% - 48px);
+  max-width: none;
 }
 
 .header__inner {
-  min-height: 58px;
+  min-height: 64px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .site-header .btn--primary {
-  min-height: 34px;
-  padding: 8px 18px;
+  min-height: 40px;
+  padding: 10px 22px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -145,14 +146,14 @@ button {
   align-items: center;
   gap: 8px;
   color: #101917;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1;
 }
 
 .brand__pin {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: inline-flex;
   color: var(--green);
 }
@@ -175,7 +176,7 @@ button {
 
 .main-nav a {
   color: #273330;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -222,6 +223,215 @@ button {
   background-position: left top, 24px 25px;
   background-size: 34px 44px, 10px 10px;
   background-repeat: no-repeat;
+}
+
+.scotia-shell {
+  width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+}
+
+.scotia-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  color: #24302c;
+  background: #ffffff;
+  border-bottom: 1px solid #e6ebf2;
+}
+
+.scotia-promo {
+  color: #ffffff;
+  background: #070707;
+}
+
+.scotia-promo .scotia-shell {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.scotia-promo a {
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.scotia-mainbar__inner {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.scotia-mainbar .brand {
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.scotia-mainbar .brand__pin {
+  width: 30px;
+  height: 30px;
+}
+
+.scotia-search {
+  width: min(100%, 420px);
+  display: grid;
+  grid-template-columns: 1fr 52px;
+  align-items: center;
+  margin-left: 12px;
+  border: 1px solid #d8e0ea;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.scotia-search input {
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  color: #14213d;
+  outline: 0;
+  font-size: 16px;
+}
+
+.scotia-search button {
+  width: 48px;
+  height: 44px;
+  border: 0;
+  background:
+    radial-gradient(circle at 45% 42%, transparent 7px, #667085 7.5px, #667085 8.5px, transparent 9px),
+    linear-gradient(45deg, transparent 48%, #667085 49%, #667085 58%, transparent 59%);
+  background-repeat: no-repeat;
+  background-position: center, 29px 31px;
+  background-size: 30px 30px, 11px 11px;
+}
+
+.scotia-actions {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-left: auto;
+}
+
+.scotia-actions a {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.scotia-actions span {
+  color: #005442;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.scotia-action-icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.scotia-action-icon::before,
+.scotia-action-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.scotia-action-icon--location::before {
+  inset: 3px 6px 7px;
+  border: 2px solid #4a5563;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+}
+
+.scotia-action-icon--location::after {
+  left: 11px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #4a5563;
+}
+
+.scotia-action-icon--contact::before {
+  left: 6px;
+  top: 4px;
+  width: 13px;
+  height: 20px;
+  border: 2px solid #4a5563;
+  border-radius: 7px 7px 10px 10px;
+  transform: rotate(-35deg);
+}
+
+.scotia-action-icon--contact::after {
+  right: 4px;
+  bottom: 5px;
+  width: 11px;
+  height: 7px;
+  border-bottom: 2px solid #4a5563;
+  border-right: 2px solid #4a5563;
+  border-radius: 0 0 6px 0;
+  transform: rotate(20deg);
+}
+
+.scotia-action-icon--offers::before {
+  left: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4a5563;
+  border-radius: 999px;
+}
+
+.scotia-action-icon--offers::after {
+  left: 9px;
+  top: 8px;
+  width: 10px;
+  height: 12px;
+  background:
+    linear-gradient(#4a5563, #4a5563) 50% 0 / 2px 100% no-repeat,
+    linear-gradient(#4a5563, #4a5563) 0 50% / 100% 2px no-repeat;
+}
+
+.scotia-login {
+  min-width: 154px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #005442;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.scotia-cats {
+  border-top: 1px solid #eef1f5;
+  border-bottom: 1px solid #e6ebf2;
+}
+
+.scotia-cats .scotia-shell {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.scotia-cats a {
+  color: #475467;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .site-footer {
@@ -289,6 +499,28 @@ button {
     width: min(100% - 32px, var(--container));
   }
 
+  .scotia-actions,
+  .scotia-cats {
+    display: none;
+  }
+
+  .scotia-mainbar__inner {
+    min-height: 76px;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 0;
+  }
+
+  .scotia-search {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .scotia-login {
+    margin-left: auto;
+  }
+
   .header__inner {
     gap: 16px;
     flex-wrap: wrap;
@@ -309,6 +541,21 @@ button {
 }
 
 @media (max-width: 640px) {
+  .scotia-shell {
+    width: calc(100% - 28px);
+  }
+
+  .scotia-promo .scotia-shell {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 0;
+  }
+
+  .scotia-login {
+    display: none;
+  }
+
   .topline__inner {
     justify-content: flex-start;
     overflow: auto;

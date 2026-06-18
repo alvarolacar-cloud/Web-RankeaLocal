@@ -39,15 +39,15 @@ main {
   overflow: hidden;
   padding: 46px 42px;
   border-radius: 16px;
-  color: #fff8df;
+  color: #ffffff;
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 248, 223, .18), transparent 26%),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, .16), transparent 26%),
     linear-gradient(115deg, #005442 0%, #245a3d 58%, #163b2e 100%);
 }
 
 .sectors-hero__copy h1 {
   margin: 0 0 20px;
-  color: #fff8df;
+  color: #ffffff;
   font-size: 45px;
   font-weight: 500;
   line-height: 1.06;
@@ -56,7 +56,7 @@ main {
 .sectors-hero__copy p {
   max-width: 430px;
   margin: 0 0 28px;
-  color: rgba(255,248,223,.93);
+  color: rgba(255,255,255,.9);
   font-size: 16px;
   line-height: 1.48;
 }
@@ -76,7 +76,7 @@ main {
   background:
     radial-gradient(circle at 20px 50%, transparent 6px, #667085 6.5px, #667085 7.5px, transparent 8px),
     linear-gradient(45deg, transparent 46%, #667085 47%, #667085 58%, transparent 59%),
-    #fff8df;
+    #ffffff;
   background-position: left top, 27px 27px, left top;
   background-size: 38px 48px, 10px 10px, auto;
   background-repeat: no-repeat;
@@ -87,16 +87,16 @@ main {
   flex-wrap: wrap;
   gap: 9px;
   align-items: center;
-  color: #fff8df;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
 }
 
 .popular-tags a {
   padding: 6px 12px;
-  border: 1px solid rgba(255,248,223,.72);
+  border: 1px solid rgba(255,255,255,.72);
   border-radius: 999px;
-  color: #fff8df;
+  color: #ffffff;
 }
 
 .hero-report-stack {
@@ -226,12 +226,18 @@ main {
 .browse-section,
 .group-section,
 .directory-section {
-  background: #faf7eb;
+  background: #ffffff;
 }
 
 .how-section,
 .featured-section {
   background: #ffffff;
+}
+
+.browse-section,
+.group-section,
+.directory-section {
+  border-top: 1px solid rgba(223, 230, 239, .72);
 }
 
 .browse-section,
@@ -327,7 +333,7 @@ main {
   border-radius: 10px;
   color: #0b1220;
   background: rgba(255,255,255,.92);
-  box-shadow: 0 10px 22px rgba(57, 47, 24, .08);
+  box-shadow: 0 8px 18px rgba(10,31,68,.06);
   transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
 }
 
@@ -550,7 +556,7 @@ main {
 
 .report-card {
   padding: 12px;
-  box-shadow: 0 10px 22px rgba(57, 47, 24, .08);
+  box-shadow: 0 8px 18px rgba(10,31,68,.06);
 }
 
 .report-card strong {
